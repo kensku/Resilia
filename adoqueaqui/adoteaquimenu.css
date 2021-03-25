@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(207, 247, 247);
+}
+@media (max-width: 700px){
+    .container, .one, .two{
+        display: none;
+    }
+    .container2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (max-width: 900px){
+    .one{
+        display: none;
+    }
+}
+
+header{
+    display: flex;
+    align-content: center;
+    background-color: blue;
+}
+
+.flex{
+    font-size: 5vh;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container:hover{
+    font-size: 7vh;
+}
+
+header .container2{
+    position: absolute;
+    right: 0;
+
+}
+.container2{
+    display: flex;
+
+}
+
+.container2 p{
+    margin-left: 30px;
+}
+
+.container2 p:hover{
+    color: wheat;
+    transition: color 2s;
+}
+
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pics img{
+    width: 337px;
+    height: 440px;
+    object-fit: cover;
+    display: inline-block;
+    
+} 
+
+.pics img:hover{
+    opacity: 0.5;
+    filter: grayscale(100%);
+    transition: 1s;
+}
